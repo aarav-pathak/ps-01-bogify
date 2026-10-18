@@ -1,14 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: sans-serif;
-  margin: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  padding: 20px;
 }
 
 header {
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #f2f2f2;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 25px;
 }
 
 header a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
   margin: 0 10px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 15px 0 10px 0;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #0066cc;
+}
+
+button {
+  padding: 6px 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #f0f0f0;
 }

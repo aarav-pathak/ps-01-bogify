@@ -10,13 +10,11 @@ function App() {
   return (
     <BrowserRouter>
       <header>
-        {/* // use this for URL */}
         <Link to='/'>Home</Link> {"||"}
         <Link to='/posts'>Posts</Link>
       </header>
 
       <Routes>
-        {/* //use this ki kis routes pe kaun sa componet render hoga */}
         <Route path='/' element={<Home />} />
         <Route path='/posts' element={<Posts />} />
         <Route path='/posts/:id' element={<PostDetails />} />

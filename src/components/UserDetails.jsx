@@ -31,7 +31,7 @@ function UserDetails() {
       <h1>{user.name}</h1>
       <p><b>Username:</b> @{user.username}</p>
       <p><b>Email:</b> {user.email}</p>
-      <p><b>Company:</b> {user.company?.name || 'N/A'}</p>
+      <p><b>Company:</b> {user.company.name}</p>
 
       <h3>Posts by {user.name} ({posts.length})</h3>
       <div>

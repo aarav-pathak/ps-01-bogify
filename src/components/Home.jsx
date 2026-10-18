@@ -5,7 +5,9 @@ function Home() {
     <div>
       <h1>Welcome to Blogify</h1>
       <p>simple blog reader to read posts and comments</p>
-      <Link to='/posts'>Read posts</Link>
+      <Link to='/posts'>
+        <button>Read posts</button>
+      </Link>
     </div>
   )
 }
