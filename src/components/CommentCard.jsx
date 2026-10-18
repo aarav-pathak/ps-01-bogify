@@ -1,10 +1,7 @@
 function CommentCard({ c }) {
   return (
-    <div className="card ccard">
-      <div className="row">
-        <b>{c.name}</b>
-        <span className="sub">({c.email})</span>
-      </div>
+    <div style={{ border: '1px solid #eee', margin: '5px 0', padding: '8px' }}>
+      <p><b>{c.name}</b> ({c.email})</p>
       <p>{c.body}</p>
     </div>
   )

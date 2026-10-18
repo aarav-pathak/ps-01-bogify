@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import PostCard from '../components/PostCard.jsx'
+import PostCard from './PostCard'
 
 function Posts() {
   const [posts, setposts] = useState([])
@@ -20,19 +20,16 @@ function Posts() {
   )
 
   return (
-    <div className="wrap">
-      <div className="top">
-        <h2>All Posts</h2>
-        <input
-          type="text"
-          placeholder="search by title..."
-          value={txt}
-          onChange={sethand}
-          className="inp"
-        />
-      </div>
+    <div>
+      <h1>Posts</h1>
+      <input
+        type='text'
+        placeholder='search by title...'
+        value={txt}
+        onChange={sethand}
+      />
 
-      <div className="grid">
+      <div>
         {list.map(p => (
           <PostCard key={p.id} p={p} />
         ))}
